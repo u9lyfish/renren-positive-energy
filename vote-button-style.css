@@ -1,0 +1,62 @@
+/*=== Original state ===*/
+.vote-wrapper {
+	float: right;
+	margin-right: 10px;
+}
+.vote-button {
+	display: inline-block;
+	height:0;
+	width:0;
+	border: rgba(0,0,0,0) 10px dotted;
+	cursor: pointer;
+	position: relative;
+	float: right;
+	margin-right: 5px;
+}
+.vote-button-up {
+	border-bottom: #ccc 10px solid;
+	top: -7px;
+}
+.vote-button-down {
+	border-top: #ccc 10px solid;
+	top: 3px;
+	margin-right: 5px;
+}
+.vote-count {
+	float: right;
+	margin-right: 5px;
+	color: #ccc;
+}
+.vote-count:before {
+	content: " (";
+}
+.vote-count:after {
+	content: ")";
+}
+
+/*=== Voted ===*/
+.voted .vote-button {
+	cursor: default;
+}
+.voted-down .vote-button-up:hover {
+	border-bottom-color: #ccc;
+}
+.voted-up .vote-button-down:hover {
+	border-top-color: #ccc;
+}
+
+/*=== Up voted ===*/
+.voted-up .vote-button-up, .vote-button-up:hover {
+	border-bottom-color: #369;
+}
+.voted-up .vote-count-up {
+	color: #369;
+}
+
+/*=== Down voted ===*/
+.voted-down .vote-button-down, .vote-button-down:hover {
+	border-top-color: #c96;
+}
+.voted-down .vote-count-down {
+	color: #c96;
+}

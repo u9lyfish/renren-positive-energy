@@ -1,0 +1,28 @@
+{
+    "content_scripts": [
+        {
+            "css": [
+                "vote-button-style.css"
+            ],
+            "js": [
+                "jquery-1.10.2.min.js",
+                "contentscript.js"
+            ], 
+            "matches": [
+                "http://www.renren.com/*"
+            ]
+        }
+    ], 
+    "description": "在人人新鲜事中显示正能量投票按钮", 
+    "icons": {
+        "16": "icons/smile_16x16.png",
+        "48": "icons/smile_48x48.png",
+        "128": "icons/smile_128x128.png"
+    },
+    "manifest_version": 2, 
+    "name": "人人正能量", 
+    "permissions": [
+        "http://positiveenergy.sinaapp.com/*"
+    ], 
+    "version": "1.1"
+}
